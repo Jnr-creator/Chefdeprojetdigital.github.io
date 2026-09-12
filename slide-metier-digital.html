@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Découverte d'un métier — chef de projet digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink: #17291f;
+    --forest: #234232;
+    --sage: #b9d3bd;
+    --cream: #f6f2e7;
+    --gold: #cf9a3e;
+    --gold-dark: #a97c2c;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:#0d1512;
+    display:flex; align-items:center; justify-content:center;
+    min-height:100vh;
+    font-family:'Sora', sans-serif;
+    padding:24px;
+  }
+  .slide{
+    width:1280px;
+    max-width:100%;
+    aspect-ratio:16/9;
+    background: linear-gradient(155deg, var(--cream) 0%, var(--sage) 100%);
+    border-radius:18px;
+    position:relative;
+    overflow:hidden;
+    box-shadow: 0 40px 80px -30px rgba(0,0,0,0.6);
+    padding:64px 72px;
+    display:flex;
+    flex-direction:column;
+  }
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    color: var(--forest);
+    font-size:15px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    font-weight:600;
+    opacity:0.75;
+  }
+  .eyebrow::before{
+    content:"";
+    width:34px; height:2px;
+    background: var(--gold);
+    display:inline-block;
+  }
+  .title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:64px;
+    line-height:1.05;
+    color: var(--ink);
+    margin-top:18px;
+    max-width:780px;
+  }
+  .title em{
+    font-style:italic;
+    font-weight:500;
+    color: var(--gold-dark);
+  }
+  .content{
+    flex:1;
+    display:grid;
+    grid-template-columns:340px 1fr;
+    gap:56px;
+    margin-top:40px;
+    align-items:center;
+  }
+  .portrait{
+    position:relative;
+    width:100%;
+    aspect-ratio:3/4;
+    border-radius:16px;
+    overflow:hidden;
+    background: var(--forest);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .portrait img{
+    width:100%; height:100%; object-fit:cover;
+    filter: saturate(0.9);
+  }
+  .portrait::after{
+    content:"";
+    position:absolute; inset:0;
+    background: linear-gradient(180deg, transparent 55%, rgba(23,41,31,0.55) 100%);
+  }
+  .tag{
+    position:absolute;
+    bottom:16px; left:16px;
+    z-index:2;
+    background: var(--gold);
+    color: var(--ink);
+    font-size:13px;
+    font-weight:700;
+    padding:6px 14px;
+    border-radius:100px;
+    letter-spacing:0.02em;
+  }
+  .right-col{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+  }
+  .lede{
+    font-size:19px;
+    line-height:1.6;
+    color: var(--forest);
+    max-width:520px;
+  }
+  .keywords{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .keywords span{
+    font-size:13px;
+    font-weight:600;
+    color: var(--forest);
+    background: rgba(255,255,255,0.55);
+    border:1px solid rgba(35,66,50,0.18);
+    padding:8px 16px;
+    border-radius:100px;
+  }
+  .cta{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    width:fit-content;
+    background: var(--ink);
+    color: var(--cream);
+    font-weight:600;
+    font-size:16px;
+    padding:16px 30px;
+    border-radius:100px;
+    letter-spacing:0.01em;
+    box-shadow: 0 12px 24px -8px rgba(23,41,31,0.5);
+  }
+  .cta .arrow{
+    transition:transform .2s;
+  }
+  .footer-mark{
+    position:absolute;
+    bottom:28px; right:40px;
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-size:14px;
+    color: rgba(23,41,31,0.4);
+  }
+  .caption{
+    max-width:1280px;
+    color:#cfe0d3;
+    font-size:14px;
+    text-align:center;
+    margin-top:20px;
+    line-height:1.6;
+  }
+</style>
+</head>
+<body>
+<div>
+  <div class="slide">
+    <div class="eyebrow">Découverte d'un métier</div>
+    <h1 class="title">Bienvenue dans<br>l'univers du <em>Digital</em></h1>
+
+    <div class="content">
+      <div class="portrait">
+        <svg viewBox="0 0 300 400" width="100%" height="100%" preserveAspectRatio="xMidYMax slice" style="position:absolute; inset:0;">
+          <rect width="300" height="400" fill="#234232"/>
+          <circle cx="150" cy="150" r="120" fill="#2c5240"/>
+          <circle cx="60" cy="330" r="70" fill="#cf9a3e" opacity="0.25"/>
+          <!-- laptop -->
+          <rect x="95" y="230" width="110" height="70" rx="6" fill="#f6f2e7"/>
+          <rect x="80" y="296" width="140" height="12" rx="6" fill="#e7ddc4"/>
+          <rect x="108" y="242" width="84" height="46" rx="3" fill="#234232"/>
+          <!-- head -->
+          <circle cx="150" cy="150" r="46" fill="#e8b98a"/>
+          <path d="M104 145c0-30 20-52 46-52s46 22 46 52c-10-6-20-16-46-16s-36 10-46 16z" fill="#3a2b22"/>
+          <!-- glasses -->
+          <circle cx="132" cy="152" r="12" fill="none" stroke="#17291f" stroke-width="3"/>
+          <circle cx="168" cy="152" r="12" fill="none" stroke="#17291f" stroke-width="3"/>
+          <line x1="144" y1="152" x2="156" y2="152" stroke="#17291f" stroke-width="3"/>
+          <!-- body -->
+          <path d="M80 260c8-40 30-62 70-62s62 22 70 62z" fill="#cf9a3e"/>
+        </svg>
+        <span class="tag">Chef de projet digital</span>
+      </div>
+
+      <div class="right-col">
+        <p class="lede">Passionné de digital ? Vous êtes au bon endroit. Je vous propose de découvrir un métier fascinant : celui de chef de projet digital.</p>
+        <div class="keywords">
+          <span>Stratégie</span>
+          <span>Coordination</span>
+          <span>Innovation</span>
+        </div>
+        <div class="cta">Découvrir le métier <span class="arrow">→</span></div>
+      </div>
+    </div>
+    <div class="footer-mark">01 · Introduction</div>
+  </div>
+  <p class="caption">Maquette alternative — titre agrandi, palette forêt/sauge/or, mots-clés du métier, CTA orienté action</p>
+</div>
+</body>
+</html>
